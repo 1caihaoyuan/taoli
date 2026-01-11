@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #000;
+  --color-surface: #0a0a0a;
+  --color-border: #1f1f1f;
+  --color-green: #00ff41;
+  --color-red: #ff3333;
+  --color-blue: #00ccff;
+  --color-purple: #bf5af2;
+  --color-muted: #666;
+  --color-accent: #FFD700;
+  
+  --font-family-mono: "JetBrains Mono", monospace;
+  --font-family-sans: "Inter", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0.75rem 8rem;
+}
+
+@media (min-width: 768px) {
+  #app {
+    padding: 2.5rem 1rem 8rem;
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/* 隐藏数字输入框的箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* 动画 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 全局工具类 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

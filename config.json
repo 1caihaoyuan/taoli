@@ -1,0 +1,33 @@
+{
+    "binance": {
+        "apiKey": "",
+        "secret": "",
+        "enable": false
+    },
+    "okx": {
+        "apiKey": "",
+        "secret": "",
+        "enable": false,
+        "password": ""
+    },
+    "bybit": {
+        "apiKey": "",
+        "secret": "",
+        "enable": false
+    },
+    "bitget": {
+        "apiKey": "",
+        "secret": "",
+        "enable": false
+    },
+    "gate": {
+        "apiKey": "",
+        "secret": "",
+        "enable": false
+    },
+    "kucoin": {
+        "apiKey": "",
+        "secret": "",
+        "enable": false
+    }
+}
